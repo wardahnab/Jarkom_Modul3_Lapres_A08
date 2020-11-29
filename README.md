@@ -56,11 +56,11 @@ untuk konfigurasi subnet 1 (client Gresik dan Sidoarjo)
 
 setting pada client Gresik
 
-![interface_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_gresik.png)
+![interface_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_gresik.png)
 
 hasil `ifconfig` pada Gresik
 
-![ifconfig_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_gresik.png)
+![ifconfig_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_gresik.png)
 
 
 untuk konfigurasi subnet 3 (client Banyuwangi dan Madiun)
@@ -72,11 +72,11 @@ untuk konfigurasi subnet 3 (client Banyuwangi dan Madiun)
 
 setting pada client Banyuwangi
 
-![interface_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_banyuwangi.png)
+![interface_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_banyuwangi.png)
 
 hasil `ifconfig` pada Banyuwangi
 
-![ifconfig_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_banyuwangi.png)
+![ifconfig_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_banyuwangi.png)
 
 
 ### PROXY
@@ -167,6 +167,7 @@ Keterangan : yyy adalah nama kelompok masing-masing. Contoh: janganlupa-ta.c01.p
 **Jawaban**
 
 membuat konfigurasi di Malang sebagai DNS, yaitu pada file `/etc/bind/named.conf.local`
+
 ![12.1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.1.png)
 
 lalu konfigurasi pada file `/etc/bind/jarkom/janganlupa-ta.a08.pw`
@@ -179,7 +180,7 @@ kemudian apabila disetting proxy pada browser
 
 maka akan muncul login seperti kalau mengakses dengan proxy IP Mojokerto `10.151.73.75`
 
-![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.2.png)
+![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.4.png)
 
 
 
