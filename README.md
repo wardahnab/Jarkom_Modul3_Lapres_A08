@@ -98,6 +98,9 @@ Anri sudah menjadwal pengerjaan TA-nya
 
 **Jawaban**
 
+[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.1.png)
+
+
 
 **No 8**
 
