@@ -13,7 +13,7 @@ Anri adalah seorang mahasiswa tingkat akhir yang sedang mengerjakan TA mengenai 
 **Jawaban**
 
 
-[!1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/1.2.png)
+![1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/1.2.png)
 
 
 topologi yang dibuat sebagai berikut :
@@ -136,13 +136,13 @@ Anri sudah menjadwal pengerjaan TA-nya
 
 **Jawaban**
 
-[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.1.png)
+![7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.1.png)
 
 
-[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.2.png)
+![7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.2.png)
 
 
-[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.3.png)
+![7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.3.png)
 
 
 **No 8**
@@ -153,10 +153,10 @@ Anri sudah menjadwal pengerjaan TA-nya
 **Jawaban**
 
 
-[!8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.1.png)
+![8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.1.png)
 
 
-[!8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.2.png)
+![8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.2.png)
 
 
 **No 9**
@@ -167,10 +167,10 @@ Anri sudah menjadwal pengerjaan TA-nya
 **Jawaban**
 
 
-[!9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.1.png)
+![9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.1.png)
 
 
-[!9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.2.png)
+![9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.2.png)
 
 
 **No 10**
