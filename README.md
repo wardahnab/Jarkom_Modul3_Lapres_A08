@@ -1,11 +1,10 @@
-# Lapres Modul 3 Kelompok A08
-
 
 ## Soal
 
 
 Anri adalah seorang mahasiswa tingkat akhir yang sedang mengerjakan TA mengenai DHCP dan Proxy. Bu Meguri sebagai dosen pembimbing Anri memberikan tugas pertamanya, 
 
+### DHCP
 **No 1**
 
 (1) yaitu untuk membuat topologi jaringan demi kelancaran TA-nya dengan kriteria sebagai berikut:Anri sudah pernah mempelajari teknik Jaringan Komputer sehingga Anri dapat membuat topologi tersebut dengan mudah. Bu Meguri memerintahkan Anri untuk menjadikan SURABAYA sebagai router, MALANG sebagai DNS Server, TUBAN sebagai DHCP server, serta MOJOKERTO sebagai Proxy server, dan UML lainnya sebagai client. Bu Meguri berpesan pada Anri untuk menyusun topologi secara hati-hati dan memperhatikan gambar topologi yang diberikan Bu Meguri. Karena TUBAN jauh dari client, maka perlu adanya perantara agar bisa saling terhubung. 
@@ -21,36 +20,66 @@ Anri adalah seorang mahasiswa tingkat akhir yang sedang mengerjakan TA mengenai 
 
 **Jawaban**
 
+kami tidak menggunakan relay, maka DHCP server berada di Surabaya. 
+maka di Surabaya diinstall DHCP server dengan perintah `apt-get install isc-dhcp-server`
+
+kemudian konfigurasi interface pada `/etc/default/isc-dhcp-server` sebagai berikut
+
+![dhcp](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/2.1.png)
+
 
 **No 3**
 
 (3) Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.
 
-
-**Jawaban**
-
-
 **No 4**
 
 (4) Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
 
-
-**Jawaban**
-
-
 **No 5**
 
 (5) Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP
-
-
-**Jawaban**
-
 
 **No 6**
 
 (6) Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan (6) client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
 
 
+**jawaban**
+
+untuk konfigurasi subnet 1 (client Gresik dan Sidoarjo)
+
+![Subnet 1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/3.1.png)
+- no (4) ditunjukkan pada `range 192.168.1.50 192.168.1.70;` 
+- no (5) ditunjukkan pada `option domain-name-servers 202.46.129.2,10.151.73.74;`
+- no (6) ditunjukkan pada `default-lease-time 600;` `max-lease-time 600;`
+
+setting pada client Gresik
+
+![interface_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_gresik.png)
+
+hasil `ifconfig` pada Gresik
+
+![ifconfig_1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_gresik.png)
+
+
+untuk konfigurasi subnet 3 (client Banyuwangi dan Madiun)
+
+![Subnet 3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/4.1.png)
+- no (3) ditunjukkan pada `range 192.168.0.10 192.168.0.100;` `range 192.168.0.110 192.168.0.200;` 
+- no (5) ditunjukkan pada `option domain-name-servers 202.46.129.2,10.151.73.74;`
+- no (6) ditunjukkan pada `default-lease-time 300;` `max-lease-time 300;`
+
+setting pada client Banyuwangi
+
+![interface_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/ifc_banyuwangi.png)
+
+hasil `ifconfig` pada Banyuwangi
+
+![ifconfig_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/inf_banyuwangi.png)
+
+
+### PROXY
 **No 7**
 
 Bu Meguri adalah dosbing yang suka overthinking. Ia tidak ingin jaringan lokalnya terhubung ke internet secara langsung. Sehingga ia memberi tugas tambahan pada Anri untuk membuatkan Proxy sebagai penghubung jaringan lokal ke internet. Ada beberapa ketentuan yang harus dipenuhi dalam pembuatan Proxy ini. Pertama, akses ke proxy hanya bisa dilakukan oleh Anri sendiri sebagai user TA. 
@@ -94,6 +123,10 @@ Untuk menandakan bahwa Proxy Server ini adalah Proxy yang dibuat oleh Anri,
 
 **Jawaban**
 
+menambahkan perintah di `/etc/squid3/squid.conf` pada Mojokerto yaitu sebagai berikut yang berarti mengarahkan ke web `monta.if.its.ac.id` apabila user mencoba membuka `google.com`
+
+![ifconfig_3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/10.1.png)
+
 
 **No 11**
 
@@ -104,17 +137,47 @@ Note : File error page bisa diunduh dengan cara wget 10.151.36.202/ERR_ACCESS_DE
        Tidak perlu di extract, cukup cp -r
 
 
+
+**Jawaban**
+
+- perintah yang dilakukan antara lain mendownload file dengan perintah `wget 10.151.36.202/ERR_ACCESS_DENIED`
+- kemudian merename file *ERR_ACCESS_DENIED* yang lama menjadi *ERR_ACCESS_DENIED_OLD* dnegan perintah `mv /usr/share/squid/errors/English/ERR_ACCESS_DENIED usr/share/squid/errors/English/ERR_ACCESS_DENIED_OLD`
+- lalu mengcopy file hasil download ke tempat *ERR_ACCESS_DENIED* dengan perintah `cp -r ERR_ACCESS_DENIED /usr/share/squid/errors/English/ERR_ACCESS_DENIED`
+
+
+hasil operasi
+
+![11.1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/11.2.png)
+
+isi file error
+
+![11.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/11.3.png)
+
+namun karena penjadwalan tidak berhasil, maka error page tidak bisa ditest.
+
+source : https://www.linuxquestions.org/questions/linux-server-73/change-squid-error-page-763114/
+
 **No 12**
 
 (12) Karena Bu Meguri dan Anri adalah tipe orang pelupa, maka untuk memudahkan mereka, Anri memiliki ide ketika menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.yyy.pw dan memasukkan port 8080. 
 
 Keterangan : yyy adalah nama kelompok masing-masing. Contoh: janganlupa-ta.c01.pw
 
-Bantu Anri menyelesaikan TA nya dibawah bimbingan Bu Meguri!👩🏻‍🎓
-
-Catatan: Jika tidak bisa dan menyerah untuk setup DHCP Server pada TUBAN (dengan relay pada SURABAYA), maka setup DHCP pada SURABAYA (tanpa DHCP Relay). Pastinya nilai tidak akan maksimal.
-
 
 **Jawaban**
+
+membuat konfigurasi di Malang sebagai DNS, yaitu pada file `/etc/bind/named.conf.local`
+![12.1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.1.png)
+
+lalu konfigurasi pada file `/etc/bind/jarkom/janganlupa-ta.a08.pw`
+![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.2.png)
+
+kemudian apabila disetting proxy pada browser
+![12.3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.3.png)
+
+maka akan muncul login seperti kalau mengakses dengan proxy IP Mojokerto `10.151.73.75`
+![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.2.png)
+
+
 
 
