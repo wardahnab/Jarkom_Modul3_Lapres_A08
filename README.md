@@ -170,12 +170,15 @@ membuat konfigurasi di Malang sebagai DNS, yaitu pada file `/etc/bind/named.conf
 ![12.1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.1.png)
 
 lalu konfigurasi pada file `/etc/bind/jarkom/janganlupa-ta.a08.pw`
+
 ![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.2.png)
 
 kemudian apabila disetting proxy pada browser
+
 ![12.3](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.3.png)
 
 maka akan muncul login seperti kalau mengakses dengan proxy IP Mojokerto `10.151.73.75`
+
 ![12.2](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/12.2.png)
 
 
