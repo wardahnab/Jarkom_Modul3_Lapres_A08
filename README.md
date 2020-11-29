@@ -13,6 +13,44 @@ Anri adalah seorang mahasiswa tingkat akhir yang sedang mengerjakan TA mengenai 
 **Jawaban**
 
 
+[!1](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/1.2.png)
+
+
+topologi yang dibuat sebagai berikut :
+
+
+# Switch
+
+uml_switch -unix switch1 > /dev/null < /dev/null &
+
+uml_switch -unix switch2 > /dev/null < /dev/null &
+
+uml_switch -unix switch3 > /dev/null < /dev/null &
+
+# Router
+
+xterm -T SURABAYA -e linux ubd0=SURABAYA,jarkom umid=SURABAYA et
+
+h0=tuntap,,,'10.151.72.37' eth1=daemon,,,switch1 eth2=daemon,,,switch3 eth3=daemon,,,switch2 mem=256M &
+
+# Server
+
+xterm -T MALANG -e linux ubd0=MALANG,jarkom umid=MALANG eth0=daemon,,,switch2 mem=160M &
+
+xterm -T MOJOKERTO -e linux ubd0=MOJOKERTO,jarkom umid=MOJOKERTO eth0=daemon,,,switch2 mem=128M &
+
+xterm -T TUBAN -e linux ubd0=TUBAN,jarkom umid=TUBAN eth0=daemon,,,switch2 mem=128M &
+
+# Klien
+
+xterm -T SIDOARJO -e linux ubd0=SIDOARJO,jarkom umid=SIDOARJO eth0=daemon,,,switch1 mem=64M &
+
+xterm -T GRESIK -e linux ubd0=GRESIK,jarkom umid=GRESIK eth0=daemon,,,switch1 mem=64M &
+
+xterm -T BANYUWANGI -e linux ubd0=BANYUWANGI,jarkom umid=BANYUWANGI eth0=daemon,,,switch3 mem=64M &
+
+xterm -T MADIUN -e linux ubd0=MADIUN,jarkom umid=MADIUN eth0=daemon,,,switch3 mem=64M &
+
 **No 2**
 
 (2) SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client. Kriteria lain yang diminta Bu Meguri pada topologi jaringan tersebut adalah: Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis. 
@@ -101,6 +139,11 @@ Anri sudah menjadwal pengerjaan TA-nya
 [!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.1.png)
 
 
+[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.2.png)
+
+
+[!7](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/7.3.png)
+
 
 **No 8**
 
@@ -110,12 +153,24 @@ Anri sudah menjadwal pengerjaan TA-nya
 **Jawaban**
 
 
+[!8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.1.png)
+
+
+[!8](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/8.2.png)
+
+
 **No 9**
 
 (9) setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00). Agar Anri bisa fokus mengerjakan TA, 
 
 
 **Jawaban**
+
+
+[!9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.1.png)
+
+
+[!9](https://github.com/wardahnab/Jarkom_Modul3_Lapres_A08/blob/main/jarkom%20soal%20shift%202/9.2.png)
 
 
 **No 10**
