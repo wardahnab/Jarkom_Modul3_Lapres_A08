@@ -19,7 +19,7 @@ Anri adalah seorang mahasiswa tingkat akhir yang sedang mengerjakan TA mengenai 
 topologi yang dibuat sebagai berikut :
 
 
-# Switch
+``# Switch
 
 uml_switch -unix switch1 > /dev/null < /dev/null &
 
@@ -49,7 +49,7 @@ xterm -T GRESIK -e linux ubd0=GRESIK,jarkom umid=GRESIK eth0=daemon,,,switch1 me
 
 xterm -T BANYUWANGI -e linux ubd0=BANYUWANGI,jarkom umid=BANYUWANGI eth0=daemon,,,switch3 mem=64M &
 
-xterm -T MADIUN -e linux ubd0=MADIUN,jarkom umid=MADIUN eth0=daemon,,,switch3 mem=64M &
+xterm -T MADIUN -e linux ubd0=MADIUN,jarkom umid=MADIUN eth0=daemon,,,switch3 mem=64M &``
 
 **No 2**
 
